@@ -10,8 +10,7 @@ class MyUWfeedback extends HTMLElement {
     return [
       'myuw-feedback-title',
       'open',
-      'show-button',
-      'show-default-content'
+      'show-button'
     ];
   }
 
@@ -89,8 +88,6 @@ class MyUWfeedback extends HTMLElement {
         // no change in open/close state; do nothing
         break;
       case 'show-button':
-        break;
-      case 'show-default-content':
         break;
     }
   }
