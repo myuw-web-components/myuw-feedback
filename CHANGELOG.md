@@ -1,5 +1,10 @@
 # myuw-feedback versions
 
+## 1.0.2
+
+# Fixed
+* Decrease font-size of the feedback icon
+
 ## 1.0.1
 
 # Changed
