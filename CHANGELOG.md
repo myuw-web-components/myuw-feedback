@@ -1,5 +1,8 @@
 # myuw-feedback versions
 
+## 1.0.3
+
+* Move backdrop shadow inside of dialog container to improve Screen Reader navigation across the browsers
 ## 1.0.2
 
 # Fixed
