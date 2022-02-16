@@ -31,21 +31,13 @@
   .demo__feedback-button:focus {
     outline: none;
   }
-  #dialog-actions {
-    margin-top: 2.8em;
-  }
-  .dialog-action {
-    color: rgba(255,255,255,0.87);
-    background-color: rgb(4,121,168);
-    padding: 10px;
-    text-decoration: none;
-  }
-  #dialog-actions {
+
+  #feedback-dialog-actions {
     margin-top: 1.5em;
     text-align: right;
   }
 
-  .dialog-action {
+.feedback-dialog-action {
   color: #fff;
   background-color: rgb(4,121,168);
   display: inline-block;
@@ -62,9 +54,9 @@
   transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
 }
 
-.dialog-action:hover,
-.dialog-action:focus {
-background-color: rgb(1 98 138);
+.feedback-dialog-action:hover,
+.feedback-dialog-action:focus {
+  background-color: rgb(1 98 138);
 }
 
 </style>
@@ -94,8 +86,8 @@ background-color: rgb(1 98 138);
   <myuw-feedback myuw-feedback-title="Feedback" slot="myuw-feedback" show-button>
     <div slot="myuw-feedback-content">
       <p>Please tell us what you think about the new all-in-one, integrated home for MyUW widgets.</p>
-      <div id="dialog-actions">
-        <a class="dialog-action" target="_blank" rel="noopener noreferrer" href="#">
+      <div id="feedback-dialog-actions">
+        <a class="feedback-dialog-action" target="_blank" rel="noopener noreferrer" href="#">
           Give Feedback</a>
       </div>
     </div>
