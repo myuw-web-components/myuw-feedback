@@ -1,9 +1,11 @@
 # myuw-feedback versions
 
-## 1.0.3
+## 1.0.4
 
 * Add .gitignore
 * Update dialog position from fixed to absolute
+## 1.0.3
+
 * Move backdrop shadow inside of dialog container to improve Screen Reader navigation across the browsers
 ## 1.0.2
 
