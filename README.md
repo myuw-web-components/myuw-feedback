@@ -1,6 +1,6 @@
 # myuw-feedback
 
-This component works similarily to the Help Dialog component, providing a way to present information in a dialog so users can take action quickly, without leaving the page.
+This component works similarily to the Help Dialog component, providing a way to present information in a dialog so users can take action quickly, without leaving the page. If dialog feels unnecessary, a quick link option is available.
 
 ## Getting started
 
@@ -15,11 +15,19 @@ Include the component on your page:
 
 <myuw-feedback
   myuw-feedback-title="Give feedback"
-  show-button
+  show-button || show-link
 >
+  <!-- Option with Dialog -->
   <div class="your-div-here" slot="myuw-feedback-content">
     Your custom content
   </div>
+
+  <!-- Option with link -->
+    <div slot="myuw-feedback-link">
+      <a id="myuw-feedback-link" aria-label="Open link to provide feedback" href="" target="_blank">
+        <svg aria-hidden="true" id="feedback-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+      </a>
+    </div>
 </myuw-feedback>
 ```
 
@@ -60,6 +68,7 @@ function showFeedbackDialog() {
 
 - **myuw-feedback-title**: The title to display at the top of the dialog
 - **show-button**: Include this attribute if you want the icon button to appear the the top bar. If you want to trigger the dialog some other way, you're free to omit this attribute.
+- **show-link**: Include this attribute if you want to pass an anchor tag, to provide a quick redirection to a Feedback mechanism of your choice.
 
 ### Slots
 

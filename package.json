@@ -1,6 +1,6 @@
 {
   "name": "@myuw-web-components/myuw-feedback",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "module": "dist/myuw-feedback.min.mjs",
   "browser": "dist/myuw-feedback.min.js",
