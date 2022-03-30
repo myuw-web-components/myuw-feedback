@@ -14,6 +14,10 @@
     display: flex;
   }
 
+  :host([show-link]) #feedback-url {
+    display: flex;
+  }
+
   :host([open]) #myuw-feedback__dialog {
     opacity: 1;
     display: block;
@@ -38,6 +42,10 @@
   }
 
   myuw-feedback[show-button] #feedback-button {
+    display: flex;
+  }
+
+  myuw-feedback[show-link] #feedback-url {
     display: flex;
   }
 
@@ -154,7 +162,8 @@
     background-color: rgba(158, 158, 158, 0.2);
   }
 
-  #feedback-button {
+  #feedback-button,
+  #feedback-url {
     display: none;
     justify-content: center;
     align-content: center;
@@ -183,12 +192,15 @@
     width: 26px;
   }
 
-  #feedback-button:hover {
+  #feedback-button:hover,
+  #feedback-url:hover {
     background-color: rgba(0, 0, 0, 0.2);
   }
 
   #feedback-button:focus,
-  #feedback-button:active {
+  #feedback-button:active,
+  #feedback-url:focus,
+  #feedback-url:active {
     outline: 2px solid #5e9ed6;
     outline: -webkit-focus-ring-color auto 5px;
   }
@@ -205,6 +217,12 @@
     }
   }
 </style>
+<!-- Feedback link -->
+<div id="feedback-url">
+  <slot name="myuw-feedback-link"></slot>
+</div>
+
+<!-- Feedack button with dialog -->
 <button id="feedback-button" aria-label="Open feedback dialog">
   <svg id="feedback-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
 </button>
