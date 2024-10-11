@@ -1,5 +1,7 @@
 # myuw-feedback
 
+**`myuw-feedback` is not currently maintained.**
+
 This component works similarily to the Help Dialog component, providing a way to present information in a dialog so users can take action quickly, without leaving the page. If dialog feels unnecessary, a quick link option is available.
 
 ## Getting started
